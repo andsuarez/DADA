@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
 import { Articles } from './articles';
 
-const ARTICLES: Articles[] = [
+export const ARTICLES: Articles[] = [
     {
         id: 1,
         title: "Typhoon Melor Threatens to Bring Wind Damage and Flooding to the Philippines",
@@ -43,13 +42,3 @@ const ARTICLES: Articles[] = [
         body: ["Praesent viverra quam sed lacus pellentesque faucibus sed et nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin mauris orci, at feugiat nisi finibus vitae. Donec sit amet diam sit amet felis fringilla laoreet quis a nisl. Phasellus elit enim, semper eget neque vitae, auctor varius turpis. Duis efficitur vitae nisl non pulvinar. Donec vitae luctus diam, vitae commodo felis. Aliquam luctus condimentum arcu nec malesuada. Curabitur varius nulla sed dapibus dapibus. Cras placerat non odio vel dapibus. Phasellus sit amet elementum mauris. Donec metus arcu, semper non velit sit amet, faucibus ultricies felis. Proin elementum metus laoreet enim ultricies, non facilisis tortor viverra. Nullam ac tellus sit amet libero vulputate rhoncus. Aliquam erat volutpat.", "Nam viverra erat vel sem tristique pretium. Quisque lobortis tellus in diam placerat aliquam. Pellentesque odio ex, ultrices ut ex vel, posuere efficitur eros. Aliquam enim lorem, ultrices eu euismod a, suscipit vel purus. Donec nunc purus, rutrum et leo sed, sollicitudin auctor velit. Nulla cursus, neque ac imperdiet ultricies, nunc libero scelerisque erat, a feugiat orci ligula convallis sem. Aenean sit amet arcu ut odio tempor gravida vitae quis odio.", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.", "Aliquam luctus condimentum arcu nec malesuada. Curabitur varius nulla sed dapibus dapibus. Cras placerat non odio vel dapibus. Phasellus sit amet elementum mauris. Donec metus arcu, semper non velit sit amet, faucibus ultricies felis. Proin elementum metus laoreet enim ultricies, non facilisis tortor viverra. Nullam ac tellus sit amet libero vulputate rhoncus. Aliquam erat volutpat.", "Nam viverra erat vel sem tristique pretium. Quisque lobortis tellus in diam placerat aliquam."]
     }
 ];
-
-@Component({
-    selector: 'dashboard',
-    templateUrl: 'dashboard.component.html',
-    styleUrls: ['dashboard.component.css']
-})
-
-export class DashboardComponent{
-    articles = ARTICLES;
-}

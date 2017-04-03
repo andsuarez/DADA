@@ -7,6 +7,7 @@ export class Articles {
     region: string;
     country: string;
     tags: string;
+    hasComments: boolean;
     intro: string;
     body: string[];
 }

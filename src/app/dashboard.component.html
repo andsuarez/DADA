@@ -10,7 +10,8 @@
             <p>{{article.intro}}</p>
             <span class="article-tags">
                 Keywords: {{article.tags}}, {{article.region}}, {{article.country}}
-                <img class="article-comments-img" src="../assets/img/comment.png" alt="view comments" />
+                <img *ngIf="article.hasComments === true" class="article-comments-img" src="../assets/img/comment.png" alt="view comments" />
+                <span *ngIf="article.hasComments === false" class="no-comments">No Comments</span>
             </span>
         </span>
     </a>
