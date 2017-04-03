@@ -1,0 +1,17 @@
+<div class="articleCollection">
+    <!--Static for now, ideally the angular2 equivalent of an ng-repeat-->
+    <a class="articleHyperlink" href="#" *ngFor="let article of articles">
+        <span class="articlePreview">
+            <span class="article-header-details">
+                <p>{{article.status}}</p>
+                <time>{{article.date}}</time>
+            </span>
+            <h2>{{article.title}}</h2>
+            <p>{{article.intro}}</p>
+            <span class="article-tags">
+                Keywords: {{article.tags}}, {{article.region}}, {{article.country}}
+                <img class="article-comments-img" src="../assets/img/comment.png" alt="view comments" />
+            </span>
+        </span>
+    </a>
+</div>

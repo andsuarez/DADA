@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<nav>
+  <div class="mainNav">
+    <a routerLink="/add" routerLinkActive="active">New Article</a>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <input type="search" placeholder="Search" />
+  </div>
+</nav>
+<hr>
+<router-outlet></router-outlet>
