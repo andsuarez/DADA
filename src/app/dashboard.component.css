@@ -51,6 +51,7 @@
 
 .articleHyperlink:hover{
     background-color: #CFCB9D;
+    cursor: pointer;
 }
 
 .articlePreview {
