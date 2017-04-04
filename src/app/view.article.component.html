@@ -27,7 +27,7 @@
     </div>
     <div class="pull-right data-sources">
         <h3>Data Summary</h3>
-        <p>This is a vetted and rated list of datasetsused for this analyis</p>
+        <p>This is a vetted and rated list of datasets used for this analyis</p>
         <ul class="individual-data-source" *ngFor="let a of article.datasets">
             <li>{{a.source}}</li>
             <li><a [href]="a.link">{{a.link}}</a></li>
@@ -37,7 +37,9 @@
         </ul>
     </div>
     <div class="pull-right comments-section">
-        Comments
+        <h4 *ngIf="article.hasComments === false">Be the first to leave a comment!</h4>
+        <h4 *ngIf="article.hasComments === true">Leave a comment!</h4>
+        <time><em>Last Updated: {{article.date}}</em></time>
     </div>
-    <time><em>Last Updated: {{article.date}}</em></time>
+    
 </div>
