@@ -10,12 +10,7 @@ import { DashboardComponent } from './dashboard.component';
 import { ViewArticleComponent } from './view.article.component';
 import { ArticleService } from './article.service';
 
-const appRoutes: Routes = [
-  {path: 'add', component: AddArticleComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'article/:id', component: ViewArticleComponent},
-  {path: '', redirectTo:'/dashboard', pathMatch:'full'}
-];
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +23,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [ArticleService],
   bootstrap: [AppComponent]

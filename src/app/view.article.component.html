@@ -1,1 +1,43 @@
-View Article
+<div class="selectedArticle" *ngIf="article">
+    <div class="main-header">
+        <div class="date-title-ctn">
+            <h1>{{article.title}}</h1>
+        </div>
+        <h2>{{article.intro}}</h2>
+    </div>
+    <div class="pull-left article-summary">
+        <h3>Overview</h3>
+        <ul>
+            <li *ngFor="let a of article.body[0].overview">{{a}}</li>
+        </ul>
+        <h3>Analysis Findings</h3>
+        <ol>
+            <li *ngFor="let a of article.body[0].findings">{{a}}</li>
+        </ol>
+        <h3>Analysis Recommendations</h3>
+        <ol>
+            <li *ngFor="let a of article.body[0].recommendations">{{a}}</li>
+        </ol>
+        <div class="article-images"  *ngFor="let a of article.graphics">
+            <figure>
+                <img [src]="a.path">
+                <figcaption><em>{{a.caption}}</em></figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="pull-right data-sources">
+        <h3>Data Summary</h3>
+        <p>This is a vetted and rated list of datasetsused for this analyis</p>
+        <ul class="individual-data-source" *ngFor="let a of article.datasets">
+            <li>{{a.source}}</li>
+            <li><a [href]="a.link">{{a.link}}</a></li>
+            <li><strong>Strengths:</strong> {{a.strengths}}</li>
+            <li><strong>Weaknesses:</strong> {{a.weaknesses}}</li>
+            <li><strong>Rating:</strong> {{a.rating}}</li>
+        </ul>
+    </div>
+    <div class="pull-right comments-section">
+        Comments
+    </div>
+    <time><em>Last Updated: {{article.date}}</em></time>
+</div>

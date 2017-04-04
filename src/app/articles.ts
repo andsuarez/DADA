@@ -9,5 +9,13 @@ export class Articles {
     tags: string;
     hasComments: boolean;
     intro: string;
-    body: string[];
+    body: [
+        {overview: Array<string>, findings: Array<string>, recommendations: Array<string>}
+    ];
+    datasets: [
+        {source: string, link: string, strengths: string, weaknesses: string, rating: number}
+    ];
+    graphics: [
+        {caption: string, path: string}
+    ];
 }
