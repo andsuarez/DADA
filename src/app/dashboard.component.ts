@@ -1,25 +1,25 @@
-import { Component } from '@angular/core';
-import { RouterModule, Routes, Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+// import { RouterModule, Routes, Router } from '@angular/router';
 import { Articles } from './articles';
-import { ARTICLES } from './mock-articles';
+// import { ARTICLES } from './mock-articles';
 import { ArticleService } from './article.service';
 
 @Component({
     selector: 'dashboard',
     templateUrl: 'dashboard.component.html',
-    styleUrls: ['dashboard.component.css'],
-    providers: [ArticleService]
+    styleUrls: ['dashboard.component.css']
 })
 
-export class DashboardComponent{
-    articles = ARTICLES;
+export class DashboardComponent implements OnInit {
+    articles: Articles[] = [];
 
     constructor(
-        private router: Router,
-        private service: ArticleService
+        // private router: Router,
+        private articleService: ArticleService
     ) {}
 
-    selectArticle(article: Articles) {
-        this.router.navigate(['/article', article.id]);
+    ngOnInit(): void {
+        this.articleService.getArticles()
+            .then(articles => this.articles = articles.slice(0,5));
     }
 }

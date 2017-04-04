@@ -1,6 +1,5 @@
 <div class="articleCollection">
-    <!--Static for now, ideally the angular2 equivalent of an ng-repeat-->
-    <a class="articleHyperlink" (click)="selectArticle(article)" *ngFor="let article of articles">
+    <a class="articleHyperlink" *ngFor="let article of articles" [routerLink]="['/article', article.id]">
         <span class="articlePreview">
             <span class="article-header-details">
                 <p>{{article.status}}</p>
