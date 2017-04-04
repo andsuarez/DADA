@@ -37,8 +37,8 @@
         </ul>
     </div>
     <div class="pull-right comments-section">
-        <h4 *ngIf="article.hasComments === false">Be the first to leave a comment!</h4>
-        <h4 *ngIf="article.hasComments === true">Leave a comment!</h4>
+        <textarea *ngIf="article.hasComments === false" rows='6' placeholder="Be the first to leave a comment!"></textarea>
+        <textarea *ngIf="article.hasComments === true" rows='6' placeholder="Leave a comment!"></textarea>
         <time><em>Last Updated: {{article.date}}</em></time>
     </div>
     
