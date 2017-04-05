@@ -37,8 +37,19 @@
         </ul>
     </div>
     <div class="pull-right comments-section">
-        <textarea *ngIf="article.hasComments === false" rows='6' placeholder="Be the first to leave a comment!"></textarea>
-        <textarea *ngIf="article.hasComments === true" rows='6' placeholder="Leave a comment!"></textarea>
+        <div *ngIf="article.hasComments === true" class="activeComments">
+            <h4>Comments</h4>
+            <ul>
+                <li *ngFor='let comment of article.comments'>{{comment}}</li>
+                <li *ngFor='let c of comments'>{{c}}</li>
+            </ul>
+        </div>
+        <ul *ngIf="comment" class="prefill-comment">
+            <li>{{comment}}</li>
+        </ul>
+        <textarea *ngIf="article.hasComments === false" rows='6' placeholder="Be the first to leave a comment!" [(ngModel)]="comment"></textarea>
+        <textarea *ngIf="article.hasComments === true" rows='6' placeholder="Leave a comment!" [(ngModel)]="comment"></textarea>
+        <button (click)="submitComment(comment); comment=''">Submit</button>
         <time><em>Last Updated: {{article.date}}</em></time>
     </div>
     

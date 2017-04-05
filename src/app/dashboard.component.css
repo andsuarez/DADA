@@ -42,11 +42,6 @@
     width: 95%;
     display: block;
     margin: 1em auto;
-    /*max-height: 16em;*/
-    /*max-width:100%;*/
-    /*overflow: hidden;
-    text-overflow: ellipsis;*/
-    /*white-space: nowrap;*/
 }
 
 .articleHyperlink:hover{

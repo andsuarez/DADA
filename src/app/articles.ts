@@ -17,5 +17,6 @@ export class Articles {
     ];
     graphics: [
         {caption: string, path: string}
-    ];
+    ]
+    comments: Array<string>;
 }

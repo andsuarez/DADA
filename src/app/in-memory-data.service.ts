@@ -51,6 +51,11 @@ export class InMemoryDataService implements InMemoryDbService {
                     caption: 'Humanitarian implications analysis (multiple data sources)',
                     path: '../assets/img/id1img1.png'
                 }
+            ],
+            comments: [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat risus diam, eget sollicitudin tortor efficitur ut. Etiam ultrices commodo leo eu malesuada. Pellentesque tristique sapien at velit aliquet tincidunt.",
+                "Aliquam accumsan mattis lectus eu laoreet. Vivamus massa lorem, ornare et dui at, sagittis mollis nisi. In hac habitasse platea dictumst. Nulla libero leo, venenatis eget lectus vulputate, tempus blandit massa.",
+                "Phasellus scelerisque leo ante, in efficitur dui vulputate a. Donec dolor nisl, pulvinar nec commodo id, dictum nec tortor."
             ]
         },
         {
@@ -126,7 +131,8 @@ export class InMemoryDataService implements InMemoryDbService {
                     caption: 'Regional humanitarian risk in context showing humanitarian risk in Burkina and the region (INFORM Sahel)',
                     path: '/assets/img/id2img3.png'
                 }
-            ]
+            ],
+            comments: []
         },
         {
             id: 3,
@@ -190,6 +196,13 @@ export class InMemoryDataService implements InMemoryDbService {
                     caption: '',
                     path: '../assets/img/id3img1.png'
                 }
+            ],
+            comments: [
+                "Suspendisse euismod efficitur mi. Praesent tincidunt nisi sagittis tortor pretium interdum. Vestibulum sagittis ipsum non orci fermentum luctus. Integer a ipsum dui. Phasellus scelerisque leo ante, in efficitur dui vulputate a. Donec dolor nisl, pulvinar nec commodo id, dictum nec tortor.",
+                "Aliquam accumsan mattis lectus eu laoreet. Vivamus massa lorem, ornare et dui at, sagittis mollis nisi. In hac habitasse platea dictumst. Nulla libero leo, venenatis eget lectus vulputate, tempus blandit massa. Sed sit amet enim pellentesque, malesuada nisl eget, pharetra velit. Sed luctus vulputate sagittis. Curabitur eget rhoncus nunc, eget laoreet mauris.",
+                "Mauris imperdiet, augue non laoreet rutrum, lacus eros tristique est, sed dictum sem enim eu neque. Vestibulum ut consequat metus. Aliquam laoreet diam eget lobortis vulputate.",
+                "Aenean semper sed neque ac bibendum. Aenean sodales, ligula et feugiat aliquet, dui lacus interdum orci, nec posuere ex tellus quis neque.",
+                "Integer dapibus vulputate enim, sed volutpat massa tempus et. Aenean vehicula tristique justo, sed tincidunt purus pretium at. Nulla vehicula turpis sit amet erat maximus consectetur."
             ]
         }
     ];

@@ -13,6 +13,7 @@ import { ArticleService } from './article.service';
 })
 
 export class ViewArticleComponent implements OnInit {
+    articles: Articles[];
     article: Articles;
 
     constructor(
@@ -25,5 +26,27 @@ export class ViewArticleComponent implements OnInit {
         this.route.params
             .switchMap((params: Params) => this.articleService.getArticle(+params['id']))
             .subscribe(article => this.article = article);
+    }
+
+    comments = [];
+
+    submitComment(newComment: string) {
+        this.comments.push(newComment);
+
+        console.log(this.comments);
+
+        
+        if(this.article.hasComments === false){
+            this.article.hasComments = true;
+        }
+
+        //original code, needs modification
+        // this.articleService.create(comment)
+        //     .then(article => {
+        //         this.articles.push(article);
+        //     });
+
+        
+            
     }
 }
