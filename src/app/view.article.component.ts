@@ -31,14 +31,19 @@ export class ViewArticleComponent implements OnInit {
     comments = [];
 
     submitComment(newComment: string) {
-        this.comments.push(newComment);
+        if(newComment){
+            this.comments.push(newComment);
 
-        console.log(this.comments);
+            console.log(this.comments);
+
+            if(this.article.hasComments === false){
+                this.article.hasComments = true;
+            }
+        }
+        
 
         
-        if(this.article.hasComments === false){
-            this.article.hasComments = true;
-        }
+        
 
         //original code, needs modification
         // this.articleService.create(comment)

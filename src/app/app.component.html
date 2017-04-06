@@ -2,7 +2,7 @@
   <div class="mainNav">
     <a routerLink="/add" routerLinkActive="active">New Article</a>
     <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-    <input type="search" placeholder="Search" />
+    <input type="search" placeholder="Search" [(ngModel)]="articleSearch" />
   </div>
 </nav>
 <hr>
