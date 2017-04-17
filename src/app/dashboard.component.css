@@ -1,29 +1,7 @@
-.articleCollection, .filterOptions {
-    margin-top: 5%;
-}
-
 .articleCollection {
     float: right;
     width: 70%;
-}
-
-.filterOptions {
-    float:left;
-    width: 27%;
-    border-right: 1px solid black;
-    padding-left: 1em;
-}
-
-.filterOptions h1 {
-    text-align: center;
-    font-size: 1.4em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.filterOptions h3 {
-    text-align: left;
-    font-size: 1em;
+    margin-top: 5%;
 }
 
 .article-header-details {
@@ -83,7 +61,8 @@
 
 h2 {
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    /*font-family: 'PT Sans', sans-serif;*/
+    font-family: 'Source Sans Pro Light', sans-serif; 
     text-transform: uppercase;
 }
 

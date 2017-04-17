@@ -49,7 +49,7 @@ export class InMemoryDataService implements InMemoryDbService {
             graphics: [
                 {
                     caption: 'Humanitarian implications analysis (multiple data sources)',
-                    path: '../assets/img/id1img1.png'
+                    path: 'assets/img/id1img1.png'
                 }
             ],
             comments: [
@@ -121,15 +121,15 @@ export class InMemoryDataService implements InMemoryDbService {
             graphics: [
                 {
                     caption: 'Recent uptick in security events in Burkina (ACLED data visualization)',
-                    path: '/assets/img/id2img1.png'
+                    path: 'assets/img/id2img1.png'
                 },
                 {
                     caption: 'Recent events in a regional context (ACLED data visualization)',
-                    path: '/assets/img/id2img2.png'
+                    path: 'assets/img/id2img2.png'
                 },
                 {
                     caption: 'Regional humanitarian risk in context showing humanitarian risk in Burkina and the region (INFORM Sahel)',
-                    path: '/assets/img/id2img3.png'
+                    path: 'assets/img/id2img3.png'
                 }
             ],
             comments: []
@@ -194,7 +194,7 @@ export class InMemoryDataService implements InMemoryDbService {
             graphics: [
                 {
                     caption: '',
-                    path: '../assets/img/id3img1.png'
+                    path: 'assets/img/id3img1.png'
                 }
             ],
             comments: [

@@ -1,5 +1,6 @@
 .active {
-    font-weight: bold;
+    font-weight: bolder;
+    color: #323232 !important;
 }
 
 .mainNav {
@@ -11,11 +12,14 @@
 
 nav {
     width: 100%;
+    background-color: #205493;
+
 }
 
 .mainNav a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: gray;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family: 'Source Sans Pro Regular', sans-serif;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -24,7 +28,7 @@ nav {
 }
 
 a:hover{
-    color: #541F3D !important;
+    color: #323232 !important;
 }
 
 section {
@@ -33,4 +37,5 @@ section {
 
 input {
     width: 35%;
+    border: none;
 }

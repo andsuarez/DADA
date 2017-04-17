@@ -1,0 +1,19 @@
+.filterOptions {
+    float:left;
+    width: 27%;
+    border-right: 1px solid black;
+    padding-left: 1em;
+    margin-top: 5%;
+}
+
+.filterOptions h1 {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.filterOptions h3 {
+    text-align: left;
+    font-size: 1em;
+}

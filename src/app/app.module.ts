@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -12,6 +12,8 @@ import { AddArticleComponent } from './add-article.component';
 import { DashboardComponent } from './dashboard.component';
 import { ViewArticleComponent } from './view.article.component';
 import { ArticleService } from './article.service';
+import { FiltersComponent } from './filters.component';
+import { DashboardSearchFilterPipe } from './dashboard-search-filter.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -19,15 +21,18 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
-    AppRoutingModule
+    AppRoutingModule,
+    DashboardSearchFilterPipe
   ],
   declarations: [
     AppComponent,
     AddArticleComponent,
     DashboardComponent,
-    ViewArticleComponent
+    ViewArticleComponent,
+    FiltersComponent
   ],
   providers: [ArticleService],
   bootstrap: [AppComponent]
